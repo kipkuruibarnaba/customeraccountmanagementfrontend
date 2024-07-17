@@ -1,0 +1,39 @@
+<div class="container mt-2">
+    <p>Register</p>
+    <div class="card p-5 mt-z">
+        <form #customerForm="ngForm" (ngSubmit)="submitCustomer(customerForm)">
+            <div class="card p-4 col-10">
+                <!-- <mat-form-field appearance="outline" class="col-8">
+                    <mat-label>Customer Id</mat-label>
+                    <input matInput placeholder="Customer Id" name="Id" [(ngModel)]="customer.Id" disabled>
+                </mat-form-field> -->
+                <mat-form-field appearance="outline" class="col-8">
+                    <mat-label>Customer Name</mat-label>
+                    <input matInput placeholder="Enter Customer Name" name="name" [(ngModel)]="customer.name">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="col-8">
+                    <mat-label>Customer Username</mat-label>
+                    <input matInput placeholder="Enter Customer Username" name="uasername" [(ngModel)]="customer.username">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="col-8">
+                    <mat-label>Customer Email</mat-label>
+                    <input type="email" matInput placeholder="Enter Customer Email" name="email" [(ngModel)]="customer.email">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="col-8">
+                    <mat-label>Customer Password</mat-label>
+                    <input type="password" matInput placeholder="Enter Customer Username" name="password" [(ngModel)]="customer.password">
+                </mat-form-field>
+                <mat-list>
+                    <mat-divider></mat-divider>
+                </mat-list>
+                <div class="text-center mt-3">
+                    <button mat-raised-button class="m-2">Clear</button>
+                    <button mat-raised-button class="m-2" color="primary">Submit</button>
+                </div>
+                <mat-list>
+                    <mat-divider></mat-divider>
+                </mat-list>
+            </div>
+        </form>
+    </div>
+</div>

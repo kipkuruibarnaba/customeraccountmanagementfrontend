@@ -1,3 +1,12 @@
+
+export interface Customer {
+    // Id:number,
+    name:string,
+    username:string,
+    email:string,
+    password:string
+
+}
 export interface Employee {
     Id:number,
     employeeName:string,

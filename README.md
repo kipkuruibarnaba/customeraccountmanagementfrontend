@@ -54,3 +54,9 @@ ng g c employee
 ng g s employee  
 ## employee list
 ng g c employee-list  
+## register
+ng g c register 
+## login
+ng g c login 
+## details
+ng g c customer-details 

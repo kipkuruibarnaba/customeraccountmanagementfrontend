@@ -1,0 +1,41 @@
+<div class="container mt-2">
+    <!-- <div mat-dialog-actions align="end">
+        <button mat-raised-button class="m-1" color="accent" routerLink="/create-employee">Create Employee</button>
+    </div> -->
+    <div class="card p-5 mt-z">
+        <p>Customer Detail</p>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- ID Column -->
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef> ID. </th>
+                <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+
+            <!-- employeeName Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Customer Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <!-- employeeContact Column -->
+            <ng-container matColumnDef="username">
+                <th mat-header-cell *matHeaderCellDef> Customer Username </th>
+                <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+            </ng-container>
+            <!-- employeeContact Column -->
+            <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef> Customer Email </th>
+                <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    </div>
+</div>
+
+<!-- [checked]="employee.employeeGender=='M' " -->

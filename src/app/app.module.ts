@@ -22,6 +22,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import {MatTableModule} from '@angular/material/table';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,9 @@ import {MatTableModule} from '@angular/material/table';
     HeaderComponent,
     EmployeeComponent,
     EmployeeListComponent,
+    RegisterComponent,
+    LoginComponent,
+    CustomerDetailsComponent,
   ],
   imports: [
     BrowserModule,
